@@ -26,5 +26,4 @@ $('figure').on('click', function() {
     } else {
         $img.attr('src', $imgAlt).attr('data-alt', $img.data('alt'));
     }
-
 });
