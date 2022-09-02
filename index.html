@@ -7,8 +7,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
-    <h1>Generating Nerfs of YCB dataset objects</h1>
-	<div class="centertext">Floris Erich, Baptiste Bourreau, Chun-Kwang Tan, Guillaume Caron, Noriaki Ando, Yusuke Yoshiyasu</div>
+    <h1>Neural Scanning: Rendering and determining geometry of household objects using Neural Radiance Fields</h1>
+	<div class="centertext">Floris Erich, Baptiste Bourreau, Chun Kwang Tan, Guillaume Caron, Yusuke Yoshiyasu, Noriaki Ando</div>
 	<div class="centertext">
 	National Institute of Advanced Industrial Science and Technology<br />
 	</div>
@@ -29,6 +29,8 @@
             This research is subsidized by New Energy and Industrial Technology Development Organization (NEDO) under a project JPNP20016.
             This paper is one of the achievements of joint research with and is jointly owned copyrighted material of ROBOT Industrial Basic Technology Collaborative Innovation Partnership.
 	</p>
+
+	<p>Questions and issues can be posted on <a href="https://github.com/robocip-aist/sii_nerf_scans">our GitHub repository</a>.</p>
 	
 	<div class="logos">
                 <a href="https://robocip.or.jp/"><img src="images/robocip_logo.svg" alt="Robocip logo" width="455" height="79" /></a>
@@ -37,7 +39,7 @@
 	<h2 link="models">Datasets</h2>
 	<p>
                 In the paper we consider 10 objects from the YCB set for qualitative analysis and 4 objects that we scanned in a previous work for quantitive and qualitive analysis.
-                We include "masked images and transforms", which can be directly loaded using <a href="https://github.com/NVlabs/instant-ngp">instant-ngp</a>, as well as exported meshes that can be loaded using your favorite 3D viewing or editting software (such as Meshlab).
+		We include "masked images and transforms", which can be directly loaded using <a href="https://github.com/NVlabs/instant-ngp">instant-ngp</a> (place them in the <i>data/nerf</i> folder and run <i>./build/testbed --scene data/nerf/NAME</i>), as well as exported meshes that can be loaded using your favorite 3D viewing or editting software (such as Meshlab).
                 By clicking on the thumbnail in the Preview column, an animation will start to see the objects from multiple angles.
         </p>
 
@@ -58,107 +60,107 @@
 			<tbody>
 			  <tr class='object_row'>
 				<td class='name_cell'>
-				  001_chips_can (YCB)
+				  001_chips_can
 				</td>
 				<td>
 				  <figure>
-				  	<img src="images/test.png" height="200" width="250" alt="Static Image" data-alt="images/test.gif">
+				  	<img src="images/ycb_chips_can.jpg" height="300" width="300" alt="Static Image" data-alt="images/test.gif">
 				  </figure>
 				</td>
 				<td>
 				  <a href="https://drive.google.com/file/d/1EimaoGAyOuHqfkLC_LNVmo5dyLULlF9C/view?usp=sharing">Zipped</a>
 				</td>
 				<td>
-				  <a href="">Zipped</a>
+				  <a href="https://drive.google.com/file/d/1PjpXutQ0Yy0d66nAYnO07mR5wBafV57E/view?usp=sharing">Zipped</a>
 				</td>
 			  </tr>
 			  <tr class='object_row'>
 				<td class='name_cell'>
-				  002_master_chef_can (YCB)
+				  002_master_chef_can
 				</td>
 				<td>
 				  <figure>
-				  	<img src="images/test.png" height="200" width="250" alt="Static Image" data-alt="images/test.gif">
+				  	<img src="images/ycb_master_chef.jpg" height="300" width="300" alt="Static Image" data-alt="images/test.gif">
 				  </figure>
 				</td>
 				<td>
 				  <a href="https://drive.google.com/file/d/1-xyDVjKlZA_VMpuKpLzFuHbFtoEVNCPE/view?usp=sharing">Zipped</a>
 				</td>
 				<td>
-				  <a href="">Zipped</a>
+				  <a href="https://drive.google.com/file/d/1-QLPWd9het_QyObqxf_y5jyZNIUDBOQc/view?usp=sharing">Zipped</a>
 				</td>
 			  </tr>
 			  <tr class='object_row'>
 				<td class='name_cell'>
-				  003_cracker_box (YCB)
+				  003_cracker_box
 				</td>
 				<td>
 				  <figure>
-				  	<img src="images/test.png" height="200" width="250" alt="Static Image" data-alt="images/test.gif">
+				  	<img src="images/ycb_cracker_box.jpg" height="300" width="300" alt="Static Image" data-alt="images/test.gif">
 				  </figure>
 				</td>
 				<td>
 				  <a href="https://drive.google.com/file/d/1EimaoGAyOuHqfkLC_LNVmo5dyLULlF9C/view?usp=sharing">Zipped</a>
 				</td>
 				<td>
-				  <a href="">Zipped</a>
+				  <a href="https://drive.google.com/file/d/19K898zLJhV35kPHVXcHdPB6YSeKvaZJf/view?usp=sharing">Zipped</a>
 				</td>
 			  </tr>
 			  <tr class='object_row'>
 				<td class='name_cell'>
-				  021_bleach_cleanser (YCB)
+				  021_bleach_cleanser
 				</td>
 				<td>
 				  <figure>
-				  	<img src="images/test.png" height="200" width="250" alt="Static Image" data-alt="images/test.gif">
+				  	<img src="images/ycb_bleach_cleanser.jpg" height="300" width="300" alt="Static Image" data-alt="images/test.gif">
 				  </figure>
 				</td>
 				<td>
 				  <a href="https://drive.google.com/file/d/1PKMJxLJw3Ba8NcOmCjku_HozOtG3GDAu/view?usp=sharing">Zipped</a>
 				</td>
 				<td>
-				  <a href="">Zipped</a>
+				  <a href="https://drive.google.com/file/d/1PoYQa5YlBedA24LBhaCKcvgd_u0-ong5/view?usp=sharing">Zipped</a>
 				</td>
 			  </tr>
 			  <tr class='object_row'>
 				<td class='name_cell'>
-				  022_windex_bottle (YCB)
+				  022_windex_bottle
 				</td>
 				<td>
 				  <figure>
-				  	<img src="images/test.png" height="200" width="250" alt="Static Image" data-alt="images/test.gif">
+				  	<img src="images/ycb_windex.jpg" height="300" width="300" alt="Static Image" data-alt="images/test.gif">
 				  </figure>
 				</td>
 				<td>
 				  <a href="https://drive.google.com/file/d/1fMbDQ49-5HM8qOoPaR-uFUTY-HYhR_qG/view?usp=sharing">Zipped</a>
 				</td>
 				<td>
-				  <a href="">Zipped</a>
+				  <a href="https://drive.google.com/file/d/1stYAJtMWLr5SoLvh-GvF-EMR6d6mutD-/view?usp=sharing">Zipped</a>
 				</td>
 			  </tr>
 			  <tr class='object_row'>
 				<td class='name_cell'>
-				  024_bowl (YCB)
+				  024_bowl
 				</td>
 				<td>
 				  <figure>
-				  	<img src="images/test.png" height="200" width="250" alt="Static Image" data-alt="images/test.gif">
+				  	<img src="images/ycb_bowl.jpg" height="300" width="300" alt="Static Image" data-alt="images/test.gif">
 				  </figure>
 				</td>
 				<td>
 				  <a href="https://drive.google.com/file/d/1ieOQc7g7mJ_UABKJ0vX_gnycjPNj20gf/view?usp=sharing">Zipped</a>
 				</td>
 				<td>
-				  <a href="">Zipped</a>
+				  <a href="https://drive.google.com/file/d/1UvDjS9_yhkLwG0LSq-HnrjX2Ae_WDf9s/view?usp=sharing">Zipped</a>
 				</td>
 			  </tr>
 			  <tr class='object_row'>
 				<td class='name_cell'>
-				  035_power_drill (YCB)
+				  035_power_drill
 				</td>
 				<td>
 				  <figure>
-				  	<img src="images/test.png" height="200" width="250" alt="Static Image" data-alt="images/test.gif">
+				  	<img src="images/ycb_power_drill.jpg" height="300" width="300" alt="Static Image" data-alt="images/test.gif">
 				  </figure>
 				</td>
 				<td>
@@ -170,50 +172,50 @@
 			  </tr>
 			  <tr class='object_row'>
 				<td class='name_cell'>
-				  036_wood_block (YCB)
+				  036_wood_block
 				</td>
 				<td>
 				  <figure>
-				  	<img src="images/test.png" height="200" width="250" alt="Static Image" data-alt="images/test.gif">
+				  	<img src="images/ycb_wood_block.jpg" height="300" width="300" alt="Static Image" data-alt="images/test.gif">
 				  </figure>
 				</td>
 				<td>
 				  <a href="https://drive.google.com/file/d/1AFYy3svegdcMCKvHxZUD_4pkqkEabocV/view?usp=sharing">Zipped</a>
 				</td>
 				<td>
-				  <a href="">Zipped</a>
+				  <a href="https://drive.google.com/file/d/1-S3iJ4e5cSJATQkS9Mgm3u55lovT1uP6/view?usp=sharing">Zipped</a>
 				</td>
 			  </tr>
 			  <tr class='object_row'>
 				<td class='name_cell'>
-				  048_hammer (YCB)
+				  048_hammer
 				</td>
 				<td>
 				  <figure>
-				  	<img src="images/test.png" height="200" width="250" alt="Static Image" data-alt="images/test.gif">
+				  	<img src="images/ycb_hammer.jpg" height="300" width="300" alt="Static Image" data-alt="images/test.gif">
 				  </figure>
 				</td>
 				<td>
 				  <a href="https://drive.google.com/file/d/1AFYy3svegdcMCKvHxZUD_4pkqkEabocV/view?usp=sharing">Zipped</a>
 				</td>
 				<td>
-				  <a href="">Zipped</a>
+				  <a href="https://drive.google.com/file/d/1-0qOkUzhDXk1kRnBIcoUd3SjEILLQBBr/view?usp=sharing">Zipped</a>
 				</td>
 			  </tr>
 			  <tr class='object_row'>
 				<td class='name_cell'>
-				  054_softball (YCB)
+				  054_softball
 				</td>
 				<td>
 				  <figure>
-				  	<img src="images/test.png" height="200" width="250" alt="Static Image" data-alt="images/test.gif">
+				  	<img src="images/ycb_softball.jpg" height="300" width="300" alt="Static Image" data-alt="images/test.gif">
 				  </figure>
 				</td>
 				<td>
 				  <a href="https://drive.google.com/file/d/1MuBA_83Rkl2TZfiU-8mrHliNrjIlasX_/view?usp=sharing">Zipped</a>
 				</td>
 				<td>
-				  <a href="">Zipped</a>
+				  <a href="https://drive.google.com/file/d/1Ot_1Io6pjx4EISJ5iuYcQzfkb3GzkOno/view?usp=sharing">Zipped</a>
 				</td>
 			  </tr>
 			</tbody>
@@ -243,7 +245,7 @@
 				</td>
 				<td>
 				  <figure>
-				  	<img src="images/test.png" height="200" width="250" alt="Static Image" data-alt="images/test.gif">
+				  	<img src="images/cupnoodle.jpg" height="300" width="300" alt="Static Image" data-alt="images/test.gif">
 				  </figure>
 				</td>
 				<td>
@@ -265,7 +267,7 @@
 				</td>
 				<td>
 				  <figure>
-				  	<img src="images/test.png" height="200" width="250" alt="Static Image" data-alt="images/test.gif">
+				  	<img src="images/mug.jpg" height="300" width="300" alt="Static Image" data-alt="images/test.gif">
 				  </figure>
 				</td>
 				<td>
@@ -287,7 +289,7 @@
 				</td>
 				<td>
 				  <figure>
-				  	<img src="images/test.png" height="200" width="250" alt="Static Image" data-alt="images/test.gif">
+				  	<img src="images/sparkling_lemon.jpg" height="300" width="300" alt="Static Image" data-alt="images/test.gif">
 				  </figure>
 				</td>
 				<td>
@@ -309,7 +311,7 @@
 				</td>
 				<td>
 				  <figure>
-				  	<img src="images/test.png" height="200" width="250" alt="Static Image" data-alt="images/test.gif">
+				  	<img src="images/tissue_box.jpg" height="300" width="300" alt="Static Image" data-alt="images/test.gif">
 				  </figure>
 				</td>
 				<td>
